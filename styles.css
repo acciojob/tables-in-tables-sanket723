@@ -1,2 +1,9 @@
 
 /* Your CSS Code here. */
+.main{
+	display:flex;
+}
+
+.left{
+	margin-right:20px;
+}
