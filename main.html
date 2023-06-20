@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Table</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="tables in tables.css" />
   </head>
   <body>
-<!--     <table class="main" style="width: 100%; height: 100%"> -->
+    <table class="main" style="width: 100%; height: 100%">
       <!-- Your code here -->
-	  <div class="main">
-		<div class="left">
-		<table class="two" border=1px solid black>
+	 
+    <tr style="height: 300px;">
+        <td>
+		    <table class="two">
 			
+
 			<thead>
-<!-- 				<th style="text-align: center">Table header...</th> -->
 				<th colspan="2">Nested Table 2</th>
 			</thead>
 			
@@ -29,11 +30,34 @@
 				</tr>
 			</tbody>
 			
-		</table>
+		    </table>
+        </td>
 
-		<br>
+        <td>
+            <table class="one">
+                <tr>
+                    <th>Nested Table 1</th>
+                </tr>
+    
+                <tr>
+                    <td>
+                        <br>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <br>
+                    </td>
+                </tr>
+                
+            </table>
+           </td>	
 
-		<table class="three" border=1px solid black>
+    </tr>
+
+	<tr style="height: 100px;">
+        <td>
+
+		<table class="three">
 			<thead>
 				<th colspan="2">Nested Table 3</th>
 			</thead>
@@ -46,37 +70,21 @@
 			</tbody>
 			
 		</table>
-	
-	</div>
-		
-<br>
-		<div class="right">
-		<table class="one" border=1px solid black>
-			<tr>
-				<th>Nested Table 1</th>
-			</tr>
+    </td>
 
-			<tr>
-				<td>
-					<li>List Item 1</li>
-					<li>List Item 1</li>
-					<li>List Item 1</li>
-				</td>
-			</tr>
-			
-		</table>
-		
-<br>
-		<table class="four" border=1px solid black>
+    <td>
+        <table class="four">
 			<th>Nested Table 4</th>
 			<tr style="background-color:rgb(0,0,0); color:white">
 				<td>HTML</td>
 			</tr>
 		</table>
-	</div>
+    </td>
 
-	  </div>
-<!--     </table> -->
+</tr>
+		
+	
+    </table>
 
   </body>
 </html>
